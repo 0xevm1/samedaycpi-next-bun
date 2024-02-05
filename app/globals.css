@@ -31,3 +31,255 @@ body {
     text-wrap: balance;
   }
 }
+
+@font-face {
+  font-family: "stsfont";
+  src: url(../public/assets/font/Garamond\ Premier\ Pro\ Display.otf);
+}
+
+body {
+  font-family: "stsfont";
+  white-space: normal;
+  background-color: #0f1b2f;
+  color: #fff;
+}
+
+.nav-text {
+  color: #172F47;
+  text-align: justify;
+  font-size: 5em;
+  width: 100%;
+}
+
+@media (max-width: 600px){
+  .nav-text {
+      font-size: 5em;
+  }
+}
+
+
+.line-title {
+  font-size: min(15px, 2vw) !important;
+}
+
+@media (max-width: 600px) {
+  .res {
+      margin-left: -.5%;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .ra-style {
+
+  }
+
+}
+
+.ra-style {
+  text-align: right;
+  font-size: max(10px, 1.5vw);
+}
+
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: black;
+  shape-rendering: crispEdges;
+}
+
+form {
+  position: absolute;
+  right: 1px;
+  /* left: 5px; */
+  top: 100px;
+}
+
+
+label {
+
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+  font-size: 0.35em;
+  color: #172F47;
+  transition: 0.5s;
+}
+
+.footer {
+  overflow: auto;
+  position: fixed;
+  bottom: 0;
+  background-color: #339933;
+  width: 100%;
+}
+
+.footer a::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  top: 100%;
+  left: 0;
+  background: #339933;
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.footer a:hover {
+  color: #172F47;
+}
+
+.footer a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.stack-bar {
+  text-align: center;
+}
+
+.main-container {
+  min-height: 100vh;
+}
+
+.data-tooltip {
+  z-index: 10000;
+  position: absolute;
+  display: none;
+  width: auto;
+  height: auto;
+  background: none repeat scroll 0 0 #f2f2f2;
+  border: 0 none;
+  border-radius: 8px 8px 8px 8px;
+  box-shadow: -3px 3px 15px #888888;
+  color: black;
+  font: 12px sans-serif;
+  padding: 5px;
+  text-align: left;
+}
+
+.tooltip-title {
+  font: 18px sans-serif;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1.5px;
+}
+
+.tooltip-count {
+  font-size: 14px;
+  text-align: center;
+  display: inline;
+
+  padding-top: 0.5rem;
+}
+
+.footer-text {
+  font-size: 0.85em;
+}
+
+@media (max-width: 500px){
+  .footer-text {
+      font-size: 0.7em;
+  }
+}
+
+/*.image-button {
+  background-image: url(assets/img/logomark.svg);
+  float: right;
+  box-shadow: white;
+  box-shadow:0px 3px 5px white, 2px 2px 2px rgba(0,0,0,0.23);
+  transition:.3s;  
+  border: 0.1px solid white;
+  font-size: 16px;
+  color: white;
+  height: 5rem;
+  vertical-align: top;
+  padding: 10px;
+  text-align: start;
+  cursor: pointer;
+  float: right;
+  
+ 
+  color:#FFF;
+  font-size:1rem;
+ 
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+}
+
+.image-button-text {
+  text-align: center;
+}*/
+
+.bg {
+  background-color: #0f1b2f;
+}
+
+.bg-filler {
+  background-image: url(../public/assets/img/bg-video-poster.webp);
+  background-size: cover;
+}
+
+.navbar {
+  background-color: #0f1b2f;
+}
+
+/* the delta in height is 4vh for every 1000px, can this be put into a Sass formula? */
+@media (min-height: 800px){
+  .height-dynamic {
+      height: 28vh;
+  }
+}
+@media (min-height: 900px){
+  .height-dynamic {
+      height: 34vh;
+  }
+}
+@media (min-height: 1000px){
+  .height-dynamic {
+      height: 38vh;
+  }
+}
+@media (min-height: 1100px){
+  .height-dynamic {
+      height: 42vh;
+  }
+}
+@media (min-height: 1200px){
+  .height-dynamic {
+      height: 46vh;
+  }
+}
+@media (min-height: 1300px){
+  .height-dynamic {
+      height: 48vh;
+  }
+}
+
+.div-1 {
+  height: 15vh;
+}
+.div-2 {
+  height: 50vh;
+}
+.div-3 {
+  height: 25vh;
+  padding-left:1.9vw;
+}
+
+@media (max-width:500px){
+  .div-3 {
+      height: 30vh;
+  }
+}
+
+.image-button-hover :hover {
+  transform:scale(1.2);
+
+}
