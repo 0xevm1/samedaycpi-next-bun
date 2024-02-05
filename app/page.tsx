@@ -31,6 +31,7 @@ export default function Home() {
                     poster="/assets/img/bg-video-poster.webp">
 
             <source src='/assets/vid/bg-cbrs.webm' type='video/webm' />
+            <source src='/assets/vid/bg-cbrs.mp4' type='video/mp4' />
             Your browser does not support HTML5 video.
              </video>
 
