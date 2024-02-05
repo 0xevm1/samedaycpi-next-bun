@@ -34,13 +34,6 @@ export default function Home() {
             Your browser does not support HTML5 video.
              </video>
 
-            <div className="content-container mb-16">
-                {/* Your content here */}
-                <p>Your content goes here, right above the footer.</p>
-                <img src={"./assets/img/samedaycpilogo-bg.webp"} className="w-auto h-28" alt="" />
-            </div>
-            
-
             <div className="bg footer mt-2 div-3">
                 <div className="flex flex-wrap">
                     <div className="w-full md:w-2/3">
