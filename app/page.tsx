@@ -34,6 +34,8 @@ export default function Home() {
             Your browser does not support HTML5 video.
              </video>
 
+            
+
             <div className="bg footer mt-2 div-3">
                 <div className="flex flex-wrap">
                     <div className="w-full md:w-2/3">
