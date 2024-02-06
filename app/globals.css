@@ -262,23 +262,6 @@ a {
   }
 }
 
-.div-1 {
-  height: 15vh;
-}
-.div-2 {
-  height: 50vh;
-}
-.div-3 {
-  height: 25vh;
-  padding-left:1.9vw;
-}
-
-@media (max-width:500px){
-  .div-3 {
-      height: 30vh;
-  }
-}
-
 .image-button-hover :hover {
   transform:scale(1.2);
 
