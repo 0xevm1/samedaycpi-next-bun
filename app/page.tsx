@@ -12,12 +12,13 @@ export default function Home() {
                 </div>
                 <div>
                     <a
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSfHXLCUvipK45qaHi33KBF4Z63xOKx6lBZCH90e26GbxCPIoA/viewform" // Replace with your actual Google Form link
-                    target="_blank" // Opens the link in a new tab
-                    rel="noopener noreferrer" // Security measure for opening links in new tabs
-                    className="bg-white text-black hover:bg-indigo-600 hover:text-white focus:ring-4 focus:ring-indigo-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center transition-colors duration-300"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSfHXLCUvipK45qaHi33KBF4Z63xOKx6lBZCH90e26GbxCPIoA/viewform" // Replace with your actual Google Form link
+                        target="_blank" // Opens the link in a new tab
+                        rel="noopener noreferrer" // Security measure for opening links in new tabs
+                        className="inline-flex items-center bg-white text-black hover:bg-indigo-600 hover:text-white focus:ring-4 focus:ring-indigo-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center transition-colors duration-300"
                     >
-                    Get Quote Now
+                        <img src="./assets/img/logomark.png" alt="Logo" className="mr-2 -ml-1 w-5 h-5" /> {/* Adjust path, margin, and size as needed */}
+                        Get Quote Now
                     </a>
                 </div>
             </nav>
