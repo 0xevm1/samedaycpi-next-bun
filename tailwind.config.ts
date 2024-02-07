@@ -13,6 +13,10 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      screens: {
+        '2xs': '320px',  // Targeting iPhone SE 1st gen and similar small devices
+        'xs': '375px',   // Targeting iPhone SE 2nd gen and similar small devices
+      },
     },
   },
   plugins: [],

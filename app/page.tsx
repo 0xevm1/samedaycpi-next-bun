@@ -9,6 +9,7 @@ export default function Home() {
         <div className="bg-filler main-container">
 
             {/* Top Banner */}
+            <a href="/company" className="hover:font-extrabold focus:font-extrabold active:font-extrabold">
             <div className="text-xs text-[#F2F2F2] text-center py-2 bg-[#D17B49]">
                 <span className="inline-flex items-center justify-center">
                     Same Day CPI is now serving Los Angeles/OC
@@ -19,6 +20,7 @@ export default function Home() {
                     </svg>
                 </span>
             </div>
+            </a>
 
 
             {/* Navigation Bar */}
