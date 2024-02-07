@@ -83,7 +83,7 @@ export default function Navbar(){
                       } absolute top-full left-0 w-full bg-[#0f1b2f] md:hidden transition transform duration-300 ease-out rounded-bl-lg rounded-br-lg`}
                     >
                       {/* Menu Links */}
-                      <a href="/about" className="block px-4 py-3 text-white text-lg hover:font-bold focus:font-bold active:font-bold">Company</a>
+                      <a href="/company" className="block px-4 py-3 text-white text-lg hover:font-bold focus:font-bold active:font-bold">Company</a>
                       <a href="/services" className="block px-4 py-3 text-white text-lg hover:font-bold focus:font-bold active:font-bold">Services</a>
                     </div>
 
