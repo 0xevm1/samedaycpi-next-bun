@@ -16,10 +16,7 @@ export default function Landing(){
                 Your browser does not support HTML5 video.
              </video>
             
-            <div className="logo-container absolute bottom-[16rem] sm:bottom-[16rem] lg:bottom[16rem] right-3 flex space-x-4">
-                {/**<Image src="./assets/img/sts-logomark.svg" alt="STS Logo" className="bg-white opacity-80"
-                    width={50}
-                    height={50} />**/}
+            <div className="logo-container absolute md:bottom-[12rem] xs:bottom-[12rem] sm:bottom-[8rem]  lg:bottom-[16rem] right-3 flex space-x-4">
                 <Image src="./assets/img/fcc-logo-blue-2020.svg" alt="FCC Compliance Logo" className="bg-white p-3 rounded-2xl opacity-100" 
                     width={50}
                     height={50}/>

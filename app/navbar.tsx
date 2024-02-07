@@ -12,7 +12,6 @@ export default function Navbar(){
                   <a href="./">
                     <Image
                       src={"/assets/img/samedaycpilogo-bg.webp"}
-                      layout="responsive" // This tells Next.js to scale the image with its parent
                       width={200} // Original aspect ratio width
                       height={116} // Original aspect ratio height
                       alt="Company Logo"
@@ -80,13 +79,14 @@ export default function Navbar(){
                     {/* Menu content */}
                     <div
                       className={`${
-                        isMenuOpen ? 'block' : 'hidden'
-                      } absolute top-full left-0 w-full bg-[#0f1b2f] md:hidden`}
+                        isMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'
+                      } absolute top-full left-0 w-full bg-[#0f1b2f] md:hidden transition transform duration-300 ease-out rounded-bl-lg rounded-br-lg`}
                     >
                       {/* Menu Links */}
-                      <a href="/about" className="block px-4 py-2 text-white">Company</a>
-                      <a href="/services" className="block px-4 py-2 text-white">Services</a>
+                      <a href="/about" className="block px-4 py-3 text-white text-lg hover:font-bold focus:font-bold active:font-bold">Company</a>
+                      <a href="/services" className="block px-4 py-3 text-white text-lg hover:font-bold focus:font-bold active:font-bold">Services</a>
                     </div>
+
                     {/* Implement toggle functionality using JavaScript */}
                 </div>
                 
