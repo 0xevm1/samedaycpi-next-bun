@@ -15,11 +15,12 @@ export default function Navbar(){
                     </a>
                 </div>
                 <div>
-                {/** Additional links/routes, needs to be collapsed in small view */}
+                {/** Additional links/routes, needs to be collapsed in small view 
                 <div className="hidden md:flex space-x-4">
                     <a href="/about" className="text-white hover:underline">About Us</a>
                     <a href="/services" className="text-white hover:underline">Services</a>
                 </div>
+                */}
                 <a
                     href="https://docs.google.com/forms/d/e/1FAIpQLSfWkX_T7RIFwxbbvNiHY00-4pR91OsR3Fw24_ZQc-ir9qFN8Q/viewform"
                     target="_blank" // Opens the link in a new tab
