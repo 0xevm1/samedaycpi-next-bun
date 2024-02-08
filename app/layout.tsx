@@ -21,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
+        {/** Facebook Meta Tags */}
         <meta property="og:image" content="https://samedaycpi.com/assets/img/banner.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -28,8 +29,20 @@ export default function RootLayout({
         <meta property="og:title" content="Same Day CPI" />
         <meta property="og:description" content="Same Day CPI provides expert CPI evaluations and FCC compliance consultations to optimize your wireless networks. Specializing in remote and on-site evaluations especially in the CBRS band. Contact us for reliable, swift service and tech excellence. DePIN" />
         <meta property="og:url" content="https://samedaycpi.com" />
-        <meta name="twitter:card" content="summary_large_image" />
+
+        {/** HTML Meta Tags */}
+        <title>Same Day CPI</title>
+        <meta name="description" content="Same Day CPI approvals! How long does CPI approval take? Reduce your wait to the Same Day! Wireless spectrum analysis done by on-site professionals, get your site submitted to SAS today!"/>
         <link rel="icon" href="./assets/img/favicon.ico" />
+        
+        {/** Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta property="twitter:domain" content="samedaycpi.com"/>
+        <meta property="twitter:url" content="https://samedaycpi.com"/>
+        <meta name="twitter:title" content="Same Day CPI"/>
+        <meta name="twitter:description" content="Same Day CPI approvals! How long does CPI approval take? Reduce your wait to the Same Day! Wireless spectrum analysis done by on-site professionals, get your site submitted to SAS today!"/>
+        <meta name="twitter:image" content="https://samedaycpi.com/assets/img/banner.png"/>
+
       </Head>
       <body className={inter.className}>
         <Navbar/>
