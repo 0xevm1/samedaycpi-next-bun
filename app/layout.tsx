@@ -10,7 +10,22 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Same Day CPI",
-  description: "Same Day CPI approvals! How long does CPI approval take? Reduce your wait to the Same Day! Wireless spectrum analysis done by on-site professionals, get your site submitted to SAS today!",
+  description: "Same Day CPI - Expedited CPI Evaluations for CBRS & FCC Compliance",
+  openGraph: {
+    type: 'website',
+    url: 'https://www.samedaycpi.com',
+    title: 'Same Day CPI - Remote and OnSite evaluations and approvals',
+    description: 'Same Day CPI - Expedited CPI Evaluations for CBRS & FCC Compliance',
+    siteName: 'Same Day CPI - Remote and OnSite evaluations and approvals',
+    images: [{
+      url: "https://samedaycpi.com/assets/img/banner.png",
+    }]
+  },
+  twitter: { 
+    card: "summary_large_image",
+    title: "Same Day CPI",
+    description: "Same Day CPI - Expedited CPI Evaluations for CBRS & FCC Compliance",
+    "images": "https://samedaycpi.com/assets/img/banner.png" }
 };
 
 export default function RootLayout({
@@ -21,27 +36,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        {/** Facebook Meta Tags */}
-        <meta property="og:image" content="https://samedaycpi.com/assets/img/banner.png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Same Day CPI" />
-        <meta property="og:description" content="Same Day CPI provides expert CPI evaluations and FCC compliance consultations to optimize your wireless networks. Specializing in remote and on-site evaluations especially in the CBRS band. Contact us for reliable, swift service and tech excellence. DePIN" />
-        <meta property="og:url" content="https://samedaycpi.com" />
-
+       
         {/** HTML Meta Tags */}
         <title>Same Day CPI</title>
         <meta name="description" content="Same Day CPI approvals! How long does CPI approval take? Reduce your wait to the Same Day! Wireless spectrum analysis done by on-site professionals, get your site submitted to SAS today!"/>
         <link rel="icon" href="./assets/img/favicon.ico" />
-        
-        {/** Twitter Meta Tags */}
-        <meta name="twitter:card" content="summary_large_image"/>
-        <meta property="twitter:domain" content="samedaycpi.com"/>
-        <meta property="twitter:url" content="https://samedaycpi.com"/>
-        <meta name="twitter:title" content="Same Day CPI"/>
-        <meta name="twitter:description" content="Same Day CPI approvals! How long does CPI approval take? Reduce your wait to the Same Day! Wireless spectrum analysis done by on-site professionals, get your site submitted to SAS today!"/>
-        <meta name="twitter:image" content="https://samedaycpi.com/assets/img/banner.png"/>
 
       </Head>
       <body className={inter.className}>
