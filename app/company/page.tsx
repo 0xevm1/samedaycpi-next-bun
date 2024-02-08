@@ -24,18 +24,20 @@ export default function Company(){
     return (
         <>
             <div className="bg-filler main-container">
-                {showVideo ? (<video
-                    className="w-screen h-screen object-cover fixed"
-                    autoPlay
-                    muted
-                    loop
-                    disablePictureInPicture
-                    playsInline
-                    poster="/assets/img/bg-video-poster.webp">
+                {showVideo ? (
+                    <video
+                        ref={videoRef}
+                        className="w-screen h-screen object-cover fixed"
+                        autoPlay
+                        muted
+                        loop
+                        disablePictureInPicture
+                        playsInline
+                        poster="/assets/img/bg-video-poster.webp">
 
-                    <source src='/assets/vid/bg-survey.mp4' type='video/mp4' />
-                    Your browser does not support HTML5 video.
-                </video>
+                        <source src='/assets/vid/bg-survey.mp4' type='video/mp4' />
+                        Your browser does not support HTML5 video.
+                    </video>
                 ):(<div>&nbsp;</div>)}
                 <div className="w-screen h-screen object-cover fixed bg-gradient-to-t from-black to-transparent"></div> {/* Gradient overlay */}
 
