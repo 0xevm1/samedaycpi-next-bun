@@ -41,8 +41,8 @@ export default function Company(){
                     </video>
                 ):(
                     <Image src="/assets/vid/bg-survey-poster.webp" alt="Fallback if video fails poster" className="w-screen h-screen object-cover fixed"
-                        width={1280}
-                        height={712} />
+                        width={1748}
+                        height={972} />
                 )}
                 <div className="w-screen h-screen object-cover fixed bg-gradient-to-t from-black to-transparent"></div> {/* Gradient overlay */}
 

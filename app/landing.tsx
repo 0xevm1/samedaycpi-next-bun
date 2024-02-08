@@ -41,8 +41,8 @@ export default function Landing(){
                 </video>
             ): (
                 <Image src="/assets/vid/bg-cbrs-poster.webp" alt="Fallback if video fails poster" className="w-screen h-screen object-cover fixed"
-                width={854}
-                height={480} />
+                width={1748}
+                height={792} />
             ) } 
              <div className="w-screen h-screen object-cover fixed inset-0 bg-black bg-opacity-20"></div> {/* Transparent black overlay */}
              <div className="w-screen h-screen object-cover fixed bg-gradient-to-t from-black to-transparent"></div> {/* Gradient overlay */}
