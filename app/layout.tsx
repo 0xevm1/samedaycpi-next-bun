@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     url: 'https://www.samedaycpi.com',
-    title: 'Same Day CPI - Remote and OnSite evaluations and approvals',
+    title: 'Same Day CPI - Remote and OnSite CPI evaluations and approvals',
     description: 'Expedited CPI Evaluations for CBRS & FCC Compliance',
     siteName: 'Same Day CPI',
     images: [{
