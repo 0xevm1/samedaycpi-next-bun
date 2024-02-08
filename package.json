@@ -2,6 +2,7 @@
   "name": "samedaycpi-next",
   "version": "0.1.0",
   "private": true,
+  "license": "Owned by Same Day CPI, LLC. Not to be reproduced without permission, this is not permission. All rights reserved.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

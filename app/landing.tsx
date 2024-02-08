@@ -1,9 +1,30 @@
+'use client'
+import { useRef, useState, useEffect } from "react";
 
 
 export default function Landing(){
+    const videoRef = useRef<HTMLVideoElement>(null);
+    const [showVideo, setShowVideo] = useState(true); // State to control video visibility
+  
+    useEffect(() => {
+      const videoEl = videoRef.current;
+      if (videoEl) {
+        const playPromise = videoEl.play();
+        if (playPromise !== undefined) {
+          playPromise.then(() => {
+            // Autoplay started successfully, show the video
+            setShowVideo(true);
+          }).catch(() => {
+            // Autoplay was prevented, hide the video
+            setShowVideo(false);
+          });
+        }
+      }
+    }, []);
+  
     return (
         <>
-            <video
+            {showVideo ? (<video
                 className="w-screen h-screen object-cover fixed"
                 autoPlay
                 muted
@@ -15,6 +36,7 @@ export default function Landing(){
                 <source src='/assets/vid/bg-cbrs.mp4' type='video/mp4' />
                 Your browser does not support HTML5 video.
              </video>
+            ): (<div>&nbsp;</div>) } 
              <div className="w-screen h-screen object-cover fixed inset-0 bg-black bg-opacity-20"></div> {/* Transparent black overlay */}
              <div className="w-screen h-screen object-cover fixed bg-gradient-to-t from-black to-transparent"></div> {/* Gradient overlay */}
             

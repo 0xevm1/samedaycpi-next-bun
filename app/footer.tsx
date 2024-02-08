@@ -10,7 +10,7 @@ export default function Footer() {
                     <div className="w-full md:w-2/3 p-1 items-center">
                         
                     </div>
-                    <div className="flex justify-end items-end p-3"> {/* This will push the image to the bottom-right */}
+                    <div className="flex justify-end items-end p-3 text-white"> {/* This will push the image to the bottom-right */}
                         {/** <span className="p-2 font-light text-xs">Same Day CPI, LLC</span> */}
                         <Image 
                             src="./assets/img/fcc-logo-white-2020.svg" 
@@ -19,6 +19,7 @@ export default function Footer() {
                             width={25}
                             height={25}
                         />
+                        &nbsp;<span>certified</span>
                     </div>
                 </div>
             </div> {/** end bg footer */}

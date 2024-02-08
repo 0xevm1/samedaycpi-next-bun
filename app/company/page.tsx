@@ -1,9 +1,30 @@
+'use client'
+import { useRef, useState, useEffect } from "react";
+
 export default function Company(){
+    const videoRef = useRef<HTMLVideoElement>(null);
+    const [showVideo, setShowVideo] = useState(true); // State to control video visibility
+  
+    useEffect(() => {
+      const videoEl = videoRef.current;
+      if (videoEl) {
+        const playPromise = videoEl.play();
+        if (playPromise !== undefined) {
+          playPromise.then(() => {
+            // Autoplay started successfully, show the video
+            setShowVideo(true);
+          }).catch(() => {
+            // Autoplay was prevented, hide the video
+            setShowVideo(false);
+          });
+        }
+      }
+    }, []);
 
     return (
         <>
             <div className="bg-filler main-container">
-                <video
+                {showVideo ? (<video
                     className="w-screen h-screen object-cover fixed"
                     autoPlay
                     muted
@@ -15,6 +36,7 @@ export default function Company(){
                     <source src='/assets/vid/bg-survey.mp4' type='video/mp4' />
                     Your browser does not support HTML5 video.
                 </video>
+                ):(<div>&nbsp;</div>)}
                 <div className="w-screen h-screen object-cover fixed bg-gradient-to-t from-black to-transparent"></div> {/* Gradient overlay */}
 
                 <div className="fixed w-screen sm:w-1/2 logo-container sm:bottom-[3rem] xs:bottom-[4rem] flex space-x-4">
