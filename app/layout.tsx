@@ -9,6 +9,7 @@ import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://samedaycpi.com'),
   manifest: "https://www.samedaycpi.com/assets/manifest.json",
   title: "Same Day CPI",
   description: "Expedited CPI Evaluations for CBRS & FCC Compliance",
