@@ -10,13 +10,13 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Same Day CPI",
-  description: "Same Day CPI - Expedited CPI Evaluations for CBRS & FCC Compliance",
+  description: "Expedited CPI Evaluations for CBRS & FCC Compliance",
   openGraph: {
     type: 'website',
     url: 'https://www.samedaycpi.com',
     title: 'Same Day CPI - Remote and OnSite evaluations and approvals',
-    description: 'Same Day CPI - Expedited CPI Evaluations for CBRS & FCC Compliance',
-    siteName: 'Same Day CPI - Remote and OnSite evaluations and approvals',
+    description: 'Expedited CPI Evaluations for CBRS & FCC Compliance',
+    siteName: 'Same Day CPI',
     images: [{
       url: "https://samedaycpi.com/assets/img/banner.png",
     }]
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   twitter: { 
     card: "summary_large_image",
     title: "Same Day CPI",
-    description: "Same Day CPI - Expedited CPI Evaluations for CBRS & FCC Compliance",
+    description: "Expedited CPI Evaluations for CBRS & FCC Compliance",
     "images": "https://samedaycpi.com/assets/img/banner.png" }
 };
 
