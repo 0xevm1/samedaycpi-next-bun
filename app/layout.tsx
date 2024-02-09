@@ -4,6 +4,8 @@ import "./globals.css";
 import Navbar from "./navbar";
 import Footer from "./footer";
 import Head from "next/head";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -45,6 +47,17 @@ export default function RootLayout({
 
       </Head>
       <body className={inter.className}>
+        <ToastContainer 
+          position="bottom-center"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+        />
         <Navbar/>
         {children}</body>
         <Footer/>
